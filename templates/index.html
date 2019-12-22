@@ -1,0 +1,44 @@
+{% load static %}
+<html>
+<head>
+  <title>Lu-Florchen Finanzen Website</title>
+  <h3>We convert any stock id into a price chart with Linear Regression analysis on it.</h3>
+</head>
+<body>
+  <p>type the stock abbreviation below to generate the chart.
+    </p>
+  {% block extrahead %}
+    <link href="{% static "test.css" %}" rel="stylesheet">
+    {% endblock %}
+    <from action="output/" method = "post" name="input">
+      Input the abbreviation of any stock here:<br>
+      <input id="Stock ID" type="text" name="Stock ID" maxlength="10" required><br>
+      <! –– <input onclick ="window.location.href=" type="submit" value="Submit">
+    </form>
+
+
+
+{% block body %}
+<div class="container">
+  <h1>Home</h1>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+  </form>
+   <h2>{{ text }}</h2>
+</div>
+{% endblock %}
+
+    <div class = "a1">
+      <h1>test page </h1>
+      </div>
+
+      <div class="b1">
+        <p> contet </p>
+        </div>
+
+</body>
+
+
+</html>

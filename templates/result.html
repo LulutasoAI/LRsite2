@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+
+
+<html lang="en" dir="ltr">
+  <head class="forcentra">
+    {% block extrahead %}
+      <link href="{% static "resultchan.css" %}" rel="stylesheet">
+      {% endblock %}
+    <meta charset="utf-8">
+    <title>Result page</title>
+    <h1 class = "top">Result Screen</h1>
+  </head>
+  <body class="forcentra">
+    <img style="width: 640px; height: 480px;"
+alt="Result picture"
+ src="{% static 'picture.png' %}"/>
+
+ <form class="auf" action="/lulu/syminp/">
+     <input type="submit" value="Do it again" />
+ </form>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+I should move linear reg def into model.py since I fucked up 
+.;
+I have to figure out how to put "input" fucntion with django 
+we need to make users put some words on "form" 
+#form function should b esued .
+
+view 
+LinearRGからdef Linear_Regression_converter()を呼び出す
+Linear_reg..._converter()はinputを必要とするので
+form.field? or somethingで入力させる
+
+submitとdjangoが繋がらない
+
+inputとvariableが繋がらない
+
+他のpython fileと繋がることはdekiru
+html内のdjangoのコードが謎
+
+1 input > submit = python variable function
+2 pylot to png
+
+2things needed.
+
+
+### short term goal for 11/DEC
+
+x = pyplot.show
+
+y = form .charfield or something 
+
+guidar, can you ataullyu skimming english articles at lightning speed
+
+###
+ to improve LRfunc to generate pylot variable
+
+seriously to make pylot into png. 
+
+画像ファイルを保存するファイルをLR_appにつくる
+
+
+im = open somethingの代わりに
+ファイルのアドレスがあれば十分かも
+
+###############
+connection between Form and View failed.
+png to html FAILED
+
+
+
+###python manage.py check 
+python manage.py sqlmigrate app_name 0001 #to see some database

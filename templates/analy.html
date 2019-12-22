@@ -1,0 +1,40 @@
+{% load static %}
+ <html>
+<head>
+  <div class = "symbolchan">
+  <h1<a href="{% url 'inputchan' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a></h1>
+      <h1><a href="/">Lu-Florchen Finanzen</a></h1>
+  </div>
+  <title>Lu-Florchen Finanzen Website desu</title>
+  <h3>This site converts almost any stock symbol into a price chart with Linear Regression analysis on it.</h3>
+</head>
+<body>
+  <p>Please input a stock symbol below to generate the chart.
+    </p>
+  {% block extrahead %}
+    <link href="{% static "test.css" %}" rel="stylesheet">
+    {% endblock %}
+{% block content %} {% endblock %}
+{% block input %}<form method="POST" class="syminpform">{% csrf_token %}
+    {{ syminpform.as_p }}
+    <button type="submit" class="save btn btn-default">Generate</button>
+</form> {% endblock %}
+  <p>Majour Stock or other symbols below, just so you know.</p>
+    <ul>
+      <li>AAPL</li>
+      <li>TM</li>
+      <li>GOOG</li>
+      <li>AMZN</li>
+      <li>TSLA</li>
+      <li>BTC-USD</li>
+    </ul>
+
+
+
+
+
+
+</body>
+
+
+</html>
