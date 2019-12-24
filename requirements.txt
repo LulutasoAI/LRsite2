@@ -1,0 +1,7 @@
+pandas
+pandas_datareader
+xlrd
+matplotlib
+sklearn
+image
+datetime

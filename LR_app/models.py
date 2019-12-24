@@ -70,7 +70,10 @@ class LRmachine(models.Model):
         plt.ylabel("Price")
         plt.plot(X,y)
         plt.plot(X, Y_pred, color="red")
-        plt.savefig(os.path.join(fname, 'picture.png'))
+        try:
+            plt.savefig(os.path.join(BASE_DIR, "static", "picture.png"))
+        except:
+            plt.savefig(os.path.join(fname, 'picture.png'))
         plt.figure(clear=True)
         """plt.title("{} price chart with Linear Regression Analysis on it".format(sid))
         plt.xlabel("Date")

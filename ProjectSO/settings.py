@@ -123,7 +123,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join("lulutasoai.pythonanywhere.com", "static"),
+    os.path.join("/home/LulutasoAI/lulutasoai.pythonanywhere.com/", "static"),
     os.path.join(BASE_DIR, "static"),
     os.path.join(BASE_DIR, "files"),
 )
